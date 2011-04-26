@@ -4,7 +4,7 @@
 %bcond_without	kernel		# don't build kernel modules
 %bcond_with	verbose		# verbose build (V=1)
 #
-%define		_rel		0.1
+%define		_rel		1
 Summary:	Linux driver for WLAN cards based on rtl8192
 Summary(pl.UTF-8):	Sterownik dla Linuksa do kart bezprzewodowych opartych na układzie rtl8192
 Name:		kernel%{_alt_kernel}-net-rtl8192
@@ -35,6 +35,7 @@ rtl8192.
 %package firmware
 Summary:	Firmware for WLAN cards based on rtl8192
 Summary(pl.UTF-8):	Firmware do kart bezprzewodowych opartych na układzie rtl8192
+Release:	%{_rel}
 License:	Distributable
 Group:		Base/Kernel
 
