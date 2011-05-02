@@ -4,7 +4,7 @@
 %bcond_without	kernel		# don't build kernel modules
 %bcond_with	verbose		# verbose build (V=1)
 #
-%define		_rel		1
+%define		_rel		2
 Summary:	Linux driver for WLAN cards based on rtl8192
 Summary(pl.UTF-8):	Sterownik dla Linuksa do kart bezprzewodowych opartych na układzie rtl8192
 Name:		kernel%{_alt_kernel}-net-rtl8192
@@ -95,4 +95,5 @@ rm -rf $RPM_BUILD_ROOT
 %files firmware
 %defattr(644,root,root,755)
 %doc firmware/rtlwifi/Realtek-Firmware-License.txt
+%dir /lib/firmware/rtlwifi
 /lib/firmware/rtlwifi/*.bin
